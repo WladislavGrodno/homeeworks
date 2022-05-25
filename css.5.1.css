@@ -1,0 +1,56 @@
+html {background-color: white;}
+
+* {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.circu, .arrowmin, .arrowsec {display: inline-block;
+    background-color: #0b6255;}
+.circum {
+    border-width: .1vw;
+    border-color:#0b6255;
+    border-style: solid;
+    border-radius: 9vw;
+    width: 16vw;
+    height: 16vw;
+    left: 4.9vw;
+    top: 4.9vw;
+}
+.circu {
+    border-color:#0b6255;
+    border-radius: .4vw;
+    border-width: .1vw;
+    width: .6vw;
+    height: .6vw;
+    left: 12.7vw;
+    top: 12.7vw;
+}
+
+.arrowsec {
+    width: 7.5vw;
+    height: .2vw;
+    top: 12.9vw;
+    animation: rot 60s linear infinite;
+}
+.arrowmin {
+    width: 6vw;
+    height: .4vw;
+    top: 12.8vw;
+    animation: rot 3600s linear infinite;
+}
+.arrowmin, .arrowsec {
+    left: 13vw;
+    transform-origin: center left;
+    border-radius: 1vw;
+}
+@keyframes rot {
+    from{transform: rotate(-90deg);}
+    to{transform: rotate(270deg);}
+}
+.rot15{transform: rotate(15deg);
+    background-color: #ff000077;}
+.rot45{transform: rotate(45deg);
+    background-color: #00ff0077;}
+.rot75{transform: rotate(75deg);
+    background-color: #0000ff77;}
